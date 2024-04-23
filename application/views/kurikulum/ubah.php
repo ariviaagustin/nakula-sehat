@@ -400,7 +400,7 @@
                 <div class="row form-group">
                     <div class="col-md-12" style="text-align: right;">
                         <input type="hidden" name="id_kurikulum" value="<?= $kurikulum->id_kurikulum; ?>">
-                        <input type="hidden" name="kak_tor_old" value="<?= $kurikulum->kak_tor; ?>">
+                        <input type="hidden" name="kak_tor_lama" value="<?= $kurikulum->kak_tor; ?>">
                         <input type="hidden" name="surat_pengantar_old" value="<?= $kurikulum->surat_pengantar; ?>">
                         <button type="submit" class="btn btn-info" style="color: #fff;">Simpan</button>
                     </div>

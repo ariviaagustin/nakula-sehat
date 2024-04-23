@@ -315,18 +315,18 @@ class Kurikulum extends CI_Controller {
           $this->upload->initialize($config);
             if(!$this->upload->do_upload('kak_tor'))
             {
-                $kak_tor = $this->input->post('kak_tor_old');
+                $kak_tor = $this->input->post('kak_tor_lama');
             }
             else
             {
                 $kak_tor = $this->upload->data()['file_name'];
-                $kak_tor_old = './agenda/perdata/kak_tor/'.$this->input->post('kak_tor_old');
-                if(file_exists($kak_tor_old)) { unlink($kak_tor_old); }
+                $kak_tor_lama = './agenda/perdata/kak_tor/'.$this->input->post('kak_tor_lama');
+                if(file_exists($kak_tor_lama)) { unlink($kak_tor_lama); }
             }
         }
         else
         {
-            $kak_tor = $this->input->post('kak_tor_old');
+            $kak_tor = $this->input->post('kak_tor_lama');
         }
 
         if(isset($_FILES['surat_pengantar']['name']))
